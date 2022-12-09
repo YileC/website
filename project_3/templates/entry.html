@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Product Management System</title>
+    </head>
+    <body>
+        {% block content %}
+        <h1>Product Management System</h1>
+        <h2>Enter Product Data</h2>
+        <form action="/data1" method = "post">
+            Product Category: <input name = "Category" type = "text"/><br>
+            Product Description: <input name = "Descriptions" type = "text"/><br>
+            Price: <input name = "Price" type = "integer"/><br>
+            Product Code: <input name = "Code" type = "text"/><br>
+            <a href="http://127.0.0.1:8080/"> 
+            <input type = "submit"/>
+        </form>
+
+        {% endblock content %}
+    </body>
+</html>

@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>Product Management System</title>
+    </head>
+    <body>
+        {% block content %}
+        <h1>Product Management System</h1>
+        <h2>Enter Product Data</h2>
+        <form action="/data2" method = "post">
+            Select Category to retrieve from database: <input name = "C" type = "text"/><br>
+            <input type ="submit"/>
+        </form>
+
+        {% endblock content %}
+    </body>
+</html>
